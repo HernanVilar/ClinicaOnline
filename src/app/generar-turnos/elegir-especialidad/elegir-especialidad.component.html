@@ -1,0 +1,23 @@
+<!-- 
+<div class="container c" #ancla>
+    <div *ngFor="let item of list" style="flex-basis: 50%;" >
+        <button class="btn btn-primary" style="width: 100%" (click) = "emitirEspecialidad(item)">{{item}}</button>
+    </div>
+</div> -->
+
+
+<div class="baaa">
+    <h4>
+        <span> Especialidad</span>
+      </h4>
+      <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="example-viewport">
+      <ul class="list-group">
+        <li *ngFor="let item of list" (click) = "emitirEspecialidad(item)" class="list-group-item lh-condensed">
+          <div class="agrandar  d-flex  align-items-center">
+            <h6 class="my-0">{{item}}</h6>
+          </div>
+          <button style="min-width: 0%" class="btn btn-primary">Seleccionar</button>
+        </li>
+      </ul>
+    </cdk-virtual-scroll-viewport>
+    </div>

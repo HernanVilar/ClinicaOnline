@@ -1,0 +1,16 @@
+<div >
+
+              <div  *ngIf="cargo && auth.paciente == true">
+              <app-perfilpaciente></app-perfilpaciente>
+            </div>
+    
+              <div *ngIf="auth.especialista">
+        
+                <app-perfil-especialista></app-perfil-especialista>
+              </div>
+
+              <div *ngIf="auth.administrador">
+                <app-perfil-administrador></app-perfil-administrador>
+              </div>
+        
+</div>

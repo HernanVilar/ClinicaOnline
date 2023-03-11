@@ -1,0 +1,66 @@
+.generaladmin
+{
+    border: solid white 10px;
+    min-width: 0%;
+}
+table,tr,td
+{
+    color: black;
+    background-color:burlywood;
+    width: 100%;
+    min-width: 0%;
+}
+.tata
+{
+    min-width: 0%;
+    max-width: 100%;
+}
+.divarriba
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divarriba > h1
+{
+    color: white;
+}
+.search
+{
+    min-height: 40px;
+    min-width: 0%;
+}
+.ful
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mmr
+{
+    margin-right: 40px;
+}
+.example-viewport {
+    min-height: 257.5px;
+    min-width: 600px;
+    border: 1px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+  }
+
+  .espacio
+{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+h1
+{
+    margin: 0%;
+    padding: 0%;
+}

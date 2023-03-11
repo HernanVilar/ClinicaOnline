@@ -1,0 +1,32 @@
+<div class="principal" >
+    <div class="hijo1">
+            <h1>Menú</h1>
+        <button class="list-group-item list-group-item-action bold curvo" [ngStyle]="{background: obj1}"(click) = "clickeado('ingresos')">Ingresos al sistema</button>
+        <button class="list-group-item list-group-item-action bold curvo" [ngStyle]="{background: obj2}" (click) = "clickeado('turnosespecialidad')">Cantidad de turnos por especialidad</button>
+        <button class="list-group-item list-group-item-action bold curvo" [ngStyle]="{background: obj3}" (click) = "clickeado('turnosdia')">Cantidad de turnos por dia</button>
+        <button class="list-group-item list-group-item-action bold curvo" [ngStyle]="{background: obj4}" (click) = "clickeado('turnossolicitadolapso')">Turnos solicitados por medico por tiempo</button>
+        <button class="list-group-item list-group-item-action bold curvo" [ngStyle]="{background: obj5}" (click) = "clickeado('turnosfiinalizadolapso')">Turnos finalizados por medico por tiempo</button>
+    </div>
+
+
+
+
+
+<div class="hijo2 minimo">
+<div *ngIf="cantturnos" class="minimo">
+    <app-cantturnosespecialidad class="minimo"></app-cantturnosespecialidad>
+</div>
+<div *ngIf="cantturnosdia"  class="minimo">
+    <app-cantturnosdia ></app-cantturnosdia>
+</div>
+<div *ngIf="turnostiempo">
+<app-turnosolicitadolapso></app-turnosolicitadolapso>
+</div>
+<div *ngIf="turnostiempofinalizados">
+<app-turnofinalizadolapso></app-turnofinalizadolapso>
+</div>
+<div *ngIf="ingresos" class="minimo">
+    <app-ingresos class="minimo"></app-ingresos>
+</div>
+</div>
+</div>

@@ -1,0 +1,64 @@
+ <!-- <div class="container c">
+    <div  *ngFor="let item of usuarios" class="min">
+        <div class="card" >
+            <img [src]="item.imagen" class="card-img-top" alt="...">
+            <div class="">
+                <button (click) = "accion(item)" class="btn btn-primary">{{item.nombre}}</button>
+            </div>
+          </div>
+    </div>
+</div>  -->
+
+
+<!-- 
+ <div class="general">
+    <div class="principal">
+      <div class="especialidad">
+        <h1 id="mifuen">Cardiologos</h1>
+      </div>
+      <div *ngFor="let itemcito of arr3;let i = index" class="nada">
+        <div class="card de"  *ngFor="let item of itemcito">
+    
+          <img class="card-img-top" [src]="item.imagen" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Nombre: {{item.nombre}}.</p>
+            <p class="card-text">Email: {{item.email}} </p>
+          </div>
+          <button  (click) = "accion(item)" class="btn btn-primary">Sacar Turno</button>
+        </div>
+  
+       </div>
+  
+    </div>
+  </div> -->
+  <div class="general">
+
+    <div class="d-flex justify-content-center align-items-center">
+      <h1 id="fuente-personalizada">{{especialidad}}</h1>
+    </div>
+      <div>
+
+        <div class="prototipo" [ngClass]="{prototipo: esadmin,prototipo2: espaciente}">
+
+            <div class="de" *ngFor="let item of usuarios;let i = index" >
+                <div>
+                    <img class="img" [src]="item.imagen" alt="">
+                </div>
+                <div>
+                   <span>
+                    Nombre: {{item.nombre}}
+                   </span>
+                    <button class="btn btn-primary button" (click) = "accion(item)">Sacar Turno</button>
+                </div>
+            </div>           
+        </div>
+        </div>
+ 
+  
+  </div>
+
+
+
+
+    
+    

@@ -1,0 +1,102 @@
+.general
+{
+    min-height: 100vh;
+    background-color:bisque;
+}
+.segundogeneral
+{
+    min-height: 300px;
+    min-width: 50%;
+    border-radius: 10px;
+    border: solid 2px red;
+}
+tr:hover
+{
+    background-color:beige;
+}
+img
+{
+    width: 50px;
+    height: 50px;
+}
+table
+{
+    font-size: 19px;
+}
+#cuadrad
+{
+    display: inline-block;
+    min-height: 200px;
+    animation-name: mianimacion;
+    animation-duration: 3s;
+    position:relative;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes mianimacion
+{
+    0%{left: 0;top:10vh;}
+    20%{left: 0;top:20vh;}
+    40%{left: 0;top:40vh;}
+    60%{left: 0;top:60vh;}
+    80%{left: 0;top:80vh;}
+    100%{left: 0;top:100vh;}
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.margindebajo
+{
+    margin-bottom: 55px;
+}
+.margindebajo h2
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}

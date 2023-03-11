@@ -1,0 +1,318 @@
+
+.general
+{
+    min-height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)
+        
+    ),
+    url("https://us.123rf.com/450wm/pigprox/pigprox1706/pigprox170600229/80679618-resumo-borr%C3%A3o-de-hospital-de-luxo-bonito-e-interior-de-cl%C3%ADnica-para-o-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+button
+{
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 5px;
+}
+.picado
+{
+    min-width: 0%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+}
+#nuestras-opciones .carta
+{
+
+ padding: 5em 0px;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+#nuestras-opciones .container
+{
+    padding: 12vh 12px 12vh 12px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 32% 32% 32%;
+
+}
+
+
+#nuestras-opciones-paciente .carta
+{
+
+ padding: 7em 0px;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+#nuestras-opciones-paciente .container
+{
+    min-height: 100vh;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 49% 49%;
+
+}
+
+
+
+#nuestras-opciones-especialista .carta
+{
+
+ padding: 7em 0px;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+#nuestras-opciones-especialista .container
+{
+    padding: 12vh 12px 12vh 12px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 49% 49%;
+
+}
+
+
+#nuestras-opciones .container div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nuestras-opciones .container div button
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+    color: white;
+    background-color: rgb(3, 117, 3);
+}
+#nuestras-opciones .container div button:hover
+{
+    background-color: rgb(2, 58, 15);
+    cursor: pointer;
+}
+
+
+
+
+#nuestras-opciones-paciente .container div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nuestras-opciones-paciente .container div button
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+    color: white;
+    background-color: rgb(3, 117, 3);
+}
+#nuestras-opciones-paciente .container div button:hover
+{
+    background-color: rgb(2, 58, 15);
+    cursor: pointer;
+}
+
+#nuestras-opciones-especialista .container div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nuestras-opciones-especialista .container div button
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+    color: white;
+    background-color: rgb(3, 117, 3);
+}
+#nuestras-opciones-especialista .container div button:hover
+{
+    background-color: rgb(2, 58, 15);
+    cursor: pointer;
+}
+
+
+
+.carta1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/mis_turnos.png");
+    background-position: center center;
+    background-size: cover;
+}
+.carta1:nth-child(2)
+{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/pacientes.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+
+
+#nuestras-opciones .carta1
+{
+
+ padding: 5em 0px;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+#nuestras-opciones-paciente .carta1
+{
+
+ padding: 7em 0px;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+#nuestras-opciones-especialista .carta1
+{
+
+ padding: 7em 0px;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+.carta:first-child{
+    background-image:
+    url("../../assets/solicitar_turnos2.png");
+    background-position: center center;
+    background-size: cover;
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/mis_turnos.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:nth-child(3){
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/usuariosss.png");
+    
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/on_off.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/logssssasdasda.png");
+    background-position: center center;
+    background-size: cover;
+}
+.carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        
+    ),
+    url("../../assets/historiaClinica.png");
+    background-position: center center;
+    background-size: cover;
+}
+@media (max-width:650px)
+{
+#nuestras-opciones .carta
+{
+background-position: center center;
+background-size: cover;
+padding: 3em 0px;
+border-radius: 15px;
+
+}
+#nuestras-opciones .container
+{
+grid-template-columns: 49% 49%;
+
+}
+#nuestras-opciones-paciente .container
+{
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+#nuestras-opciones-especialista .container
+{
+    grid-template-columns: 100%;
+}
+
+
+
+#nuestras-opciones .container div button
+    {
+        font-size: 1.2em;
+    }
+}

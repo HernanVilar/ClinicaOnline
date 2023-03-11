@@ -1,0 +1,75 @@
+<div class="general">
+ <h1>Mi perfil</h1>
+<div class="principal">
+<div class="container">
+  <div class="row">
+
+  <div class="col-md-6 maximoimagen">
+      <img [src]="datoUsuario.imagen" alt="">
+  </div>
+  <div class="col-md-6 mediaquerie" >
+    <div class="h-100 p-5 bg-light border rounded-3">
+      <h1>DATOS USUARIO</h1>
+      <span>Nombre: {{datoUsuario.nombre}} </span>
+      <br>
+      <span>Apellido: {{datoUsuario.apellido}}</span>
+      <br>
+      <span>Edad: {{datoUsuario.edad}}</span>
+      <br>
+      <span>DNI: {{datoUsuario.dni}}</span>
+      <br>
+      <span>Perfil: {{datoUsuario.perfil}}</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <form class="row colornegrita" >
+      <div class="col-6">
+        <p>Dias disponible:</p>
+        <ul>
+          <li>
+            Lunes <input type="checkbox" (click) = "dias('lunes')">
+          </li>
+          <li>
+            Martes <input type="checkbox" (click) = "dias('martes')">
+          </li>
+          <li>
+            Miercoles <input type="checkbox" (click) = "dias('miercoles')">
+          </li>
+          <li>
+            Jueves <input type="checkbox" (click) = "dias('jueves')">
+          </li>
+          <li>
+            Viernes <input type="checkbox" (click) = "dias('viernes')">
+          </li>
+          <li>
+            Sabado <input type="checkbox" (click) = "dias('sabado')" >
+          </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <label for="dni" class="form-label">Horario disponible</label>
+          <select class="form-control" id="select">
+            <option value="">Seleccione uno</option>
+            <option value="todo">Jornada completa (8:00 - 19:00)</option>
+            <option value="maniana">Mañana (8:00 - 12:00)</option>
+            <option value="tarde">Tarde (12:00 - 19:00)</option>
+          </select>
+          <label for="dni" class="form-label">Especialidad disponible</label>
+          <select class="form-control" id="select2">
+            <option *ngFor="let item of datoUsuario.especialidades" [value]="item">{{item}}</option>
+          </select>
+      </div>
+      
+      <button type="button" (click) = "enviar()" class="btn btn-primary btn-block">
+        Confirmar Horarios
+      </button>
+    </form>
+  </div> 
+</div>
+
+</div>
+</div>
+

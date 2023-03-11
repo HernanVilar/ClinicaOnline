@@ -1,0 +1,75 @@
+<div style=" min-height: 100vh; background-color: gray;">
+<div class="container" >
+<div class="d-flex" style="max-height: 300px;">
+<div class="maximoh" >
+    <div class="" style="width: 100%;">    
+      <img [src]="datoUsuario.imagen" alt="">
+    </div>
+  </div>
+  <div class="maximoh">
+    <div class="" style="width: 100%;">
+      
+      <img [src]="datoUsuario.imagen2" alt="">
+    </div>
+  </div>
+</div>
+  <div>
+    <div class="bg-warning border rounded-3 f ">
+      <h1>DATOS USUARIO</h1>
+      <span>Nombre: {{datoUsuario.nombre}} </span>
+      <span>Apellido: {{datoUsuario.apellido}}</span>
+      <span>Edad: {{datoUsuario.edad}}</span>
+      <span>DNI: {{datoUsuario.dni}}</span>
+      <span>Perfil: {{datoUsuario.perfil}}</span>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center table-responsive" >
+    <div class="table-responsive">
+      <div class="d-flex justify-content-center align-items-center table-responsive " >
+        
+       <h2>Historia Clínica</h2>
+      </div>
+      <div class="d-flex justify-content-center align-items-center table-responsive" >
+
+          <!-- <input class="form-control me-2" type="search" placeholder="Búsqueda" value="dasd"  aria-label="Search" [(ngModel)]="b" style="text-align: center;"> -->
+ 
+        
+        
+        </div>
+        <div id="content" #content class="table-responsive" >
+        
+    <table class="table text-center tt borde table-responsive" *ngIf="historiaclinicaa != null" style="border:solid black 2px">
+    <thead>
+    <tr>
+      <th scope="col">Altura</th>
+      <th scope="col">Peso</th>
+      <th scope="col">Presion</th>
+      <th scope="col">Temperatura</th>
+      <th scope="col">Dia</th>
+      <th scope="col">Hora</th>
+      <th scope="col">val1</th>
+      <th scope="col">val2</th>
+      <th scope="col">val3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of historiaclinicaa " >
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.altura}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.peso}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.presion}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.temepratura}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.dia}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.hora}}:{{item.minutos}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.valor1}} </td>    
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.valor2}} </td>
+        <td *ngIf="item.correopaciente == auth.correologeado">{{item.valor3}} </td>
+    </tr>
+    </tbody>
+    </table>
+  
+  </div>
+  <button class="btn btn-primary" (click) = "makePDF()" >CREAR PDF</button>
+    </div>
+</div>
+</div>
+</div>

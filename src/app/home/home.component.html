@@ -1,0 +1,62 @@
+<div *ngIf="auth.paciente" class="general">
+    <section id="nuestras-opciones-paciente">   
+        <div class="container">
+            <div class="carta">
+                <button [routerLink]="['/turnos']">PEDIR TURNOS</button>
+            </div>
+            <div class="carta">
+                <button [routerLink]="['/misturnos']" >MIS TURNOS</button>
+            </div>
+            
+        </div>
+    </section>
+</div>
+
+
+<div *ngIf="auth.especialista" class="general">
+    <section id="nuestras-opciones-paciente">   
+        <div class="container">
+            <div class="carta1">
+                <button [routerLink]="['/misturnos']" >MIS TURNOS</button>
+            </div>
+            <div class="carta1">
+                <button [routerLink]="['/historiaClinica']">HISTORIA CLÍNICA</button>
+            </div>
+        </div>
+   </section>
+</div>
+
+<div *ngIf="auth.administrador" class="general">
+    
+    <!-- <div class="tamaño">
+        <div class="picado">
+            <button class="btn btn-primary d" [routerLink]="['/ingreso/registrar']" >Alta Paciente/Especialista/Admin</button>
+            <button class="btn btn-primary d" [routerLink]="['/habilitarCuenta']"  >Habilitar/Inhabilitar Cuentas</button>
+            <button class="btn btn-primary d" [routerLink]="['/logs']">Logs</button>
+            <button class="btn btn-primary d" [routerLink]="['/turnos']" >Pedir turno</button>
+            <button class="btn btn-primary d" [routerLink]="['/misturnos']" >Mis turnos</button>
+    </div>
+    </div> -->
+    <section id="nuestras-opciones">   
+        <div class="container">
+            <div class="carta">
+                <button [routerLink]="['/turnos']">PEDIR TURNOS</button>
+            </div>
+            <div class="carta">
+                <button [routerLink]="['/misturnos']" >MIS TURNOS</button>
+            </div>
+            <div class="carta">
+                <button [routerLink]="['/ingreso/registrar']">ALTA USUARIO</button>
+            </div>
+            <div class="carta">
+                <button [routerLink]="['/habilitarCuenta']">HABILITAR CUENTAS</button>
+            </div>
+            <div class="carta">
+                <button [routerLink]="['/logs']">LOGS DEL SISTEMA</button>
+            </div>
+            <div class="carta">
+                <button [routerLink]="['/historiaClinica']">HISTORIAL CLÍNICO</button>
+            </div>
+        </div>
+    </section>
+</div>

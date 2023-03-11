@@ -1,0 +1,72 @@
+<div  >
+
+
+  <div class="general d-flex justify-content-center align-items-center">
+    <div class="table-responsive">
+        <div class="d-flex justify-content-center align-items-center">
+            <h2>MIS TURNOS</h2>
+        </div>
+      <div class="table-responsive segundogeneral">
+        
+<div>
+<div class="ful" style="width: 100%;">
+<input style="flex-basis: 100%; min-height: 40px;" type="search" placeholder="Búsqueda por especialidad" value="dasd"  aria-label="Search" [(ngModel)]="b">
+
+
+</div>
+</div>
+<div>
+
+        <table class="table table-responsive ">
+              <thead>
+                <tr>
+                  <th scope="col">Dia</th>
+                  <th >Horario</th>
+                  <th >Especialidad</th>
+                  <th >Especialista</th>
+                  <th >Paciente</th>
+                  <th >Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of list | busqueda:b " >
+                    <td *ngIf="item.correoPaciente == auth.correologeado">{{item.dia}} </td>
+                    <td *ngIf="item.correoPaciente == auth.correologeado">{{item.hora}}:{{item.minutos}} </td>    
+                    <td *ngIf="item.correoPaciente == auth.correologeado">{{item.especialidad}} </td>
+                    <td *ngIf="item.correoPaciente == auth.correologeado">{{item.nombreespecialista}}  {{item.apellidoespecialista}} </td>
+                    <td *ngIf="item.correoPaciente == auth.correologeado">{{item.nombrepaciente}} </td>
+                    <div *ngIf="item.correoPaciente == auth.correologeado">
+                      <button class="btn btn-primary" *ngIf="item.estado == 'pendiente' || item.estado == 'aceptado' " (click) = "cancelarTurno('paciente',item)">CANCELAR</button>
+                      <button class="btn btn-primary" *ngIf="item.estado == 'realizado'">COMPLETAR ENCUESTA</button>
+                      <button class="btn btn-primary" *ngIf="item.estado == 'realizado'">CALIFICAR TURNO</button>
+                      <button (click) = "verresenia(item)" class="btn btn-primary" *ngIf="item.comentariopaciente != 'No hay comentario' || item.comentarioespecialista != 'No hay comentario' || item.comentarioadmin != 'No hay comentario' || item.diagnostico != 'No hay comentario' ">Ver Reseña</button>          
+                    </div>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    
+</div>
+</div>
+<div class="d-flex justify-content-center align-items-center" *ngIf="resenia">
+<table class="tam" >
+  <thead>
+    <th scope="col">Comentario Paciente</th>
+  <th scope="col">Comentario Especialista</th>
+  <th scope="col">Comentario Administrador</th>
+  <th scope="col">Diagnóstico</th>
+
+</thead>
+<tbody>
+  <tr>
+    <td>{{reseniaActual.comentariopaciente}} </td>
+    <td>{{reseniaActual.comentarioespecialista}}</td>
+    <td>{{reseniaActual.comentarioadmin}}</td>
+    <td>{{reseniaActual.diagnostico}}</td>
+
+    
+  </tr>
+</tbody>
+</table>
+</div>
+</div>

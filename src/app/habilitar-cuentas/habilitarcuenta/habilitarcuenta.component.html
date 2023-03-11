@@ -1,0 +1,55 @@
+
+<div class="general d-flex justify-content-center align-items-center table-responsive">
+  <div class="table-responsive">
+    <div class="d-flex justify-content-center align-items-center margindebajo table-responsive">
+      <h2>Sección Habilitar Cuentas</h2>
+    </div>
+    <div class="table-responsive d-flex justify-content-center align-items-cente">
+       
+      <div class="table-responsive segundogeneral">
+        <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Correo</th>
+                  <th scope="col">Especialidades</th>
+                  <th scope="col">Estado_Cuenta</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Foto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of list | ordenar | estadoMayuscula ">
+                  <td>{{item.email}} </td>
+                  <td>{{item.especialidades}} </td>
+                  <td>{{item.estado}} </td>
+                 
+                  <div class="onoffswitch" *ngIf="item.estado == 'HABILITADO'">
+                    <input (click) = "rechazar(item)"   type="checkbox" name= {{item.email}} class="onoffswitch-checkbox" id={{item.email}} tabindex="0" checked>
+                    <label class="onoffswitch-label" for= {{item.email}}>
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                  <div  class="onoffswitch"  *ngIf="item.estado == 'DESHABILITADO'">
+                    <input (click) = "aceptar(item)" type="checkbox" name= {{item.email}} class="onoffswitch-checkbox" id={{item.email}} tabindex="0">
+                    <label class="onoffswitch-label" for= {{item.email}}>
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                  </div>
+                  <td>
+                    <img [src]= 'item.imagen' alt="">
+                  </td>
+    
+                  
+               
+                  
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    
+</div>
+    
+</div>
+</div>

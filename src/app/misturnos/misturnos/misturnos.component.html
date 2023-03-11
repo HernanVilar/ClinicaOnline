@@ -1,0 +1,65 @@
+<div>
+    <div *ngIf="auth.paciente == true" class="generico">
+     <app-turnopaciente></app-turnopaciente>
+
+      </div>
+
+
+      <div class="generico" *ngIf="auth.especialista == true">
+      <app-turnoespecialista></app-turnoespecialista>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="generico" *ngIf="auth.administrador == true">
+        <app-turnoadministrador></app-turnoadministrador>
+  
+        </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

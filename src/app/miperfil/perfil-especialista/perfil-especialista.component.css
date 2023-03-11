@@ -1,0 +1,52 @@
+img
+{
+    min-width: 100%;
+    height: 100%;
+    
+}
+.principal
+{
+    border: solid 2px black;
+    padding: 5px;
+    min-height: 90%;
+    max-width: 85%;
+    margin: auto;
+    margin-top: 5px;
+    background-color: burlywood;
+}
+.maximoimagen
+{
+    max-height: 300px;
+}
+.general
+{
+    background-color: gray;
+    min-height: 100vh;
+}
+h1
+{
+    text-align: center;
+}
+.colornegrita
+{
+    font-weight: bold;
+}
+.mediaquerie
+{
+    margin-top: 0;
+}
+@media (max-width: 767px) {
+    .mediaquerie
+    {
+        margin-top: 2px;
+    }
+
+}
+@media (max-width : 1005px)
+{
+    img
+{
+    max-width: 100%;
+  
+}
+}

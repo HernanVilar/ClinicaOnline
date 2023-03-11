@@ -1,0 +1,19 @@
+<app-navbar (evento) = "llego($event)" ></app-navbar>
+
+<div class="porcentual">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="tamanio">
+    <p class="copyright">Todos los Derechos Reservados 2022 &copy;</p>
+  </footer>
+
+
+  <ngx-spinner
+  bdColor="rgba(0,0,0)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>

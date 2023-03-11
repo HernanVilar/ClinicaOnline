@@ -1,0 +1,63 @@
+<div class="generaladmin" >
+    <div class="tata">
+      <div class="espacio">
+        <h1>Búsqueda paciente</h1>
+      </div>
+    <div class="ful">
+        <input class="button search" type="text" [(ngModel)]="texto" style="flex-basis: 100%" placeholder="Buscar Paciente por DNI">
+        <!-- <button class="btn btn-success buttonbuscar" style="flex-basis: 25%"  type="button" (click) = "buscadordni()">Buscar</button>
+        <button class="btn btn-warning buttonbuscar" type="button" style="flex-basis: 25%" (click) = "limpiar()">Limpiar</button> -->
+    </div>
+<div class="table table-responsive" style="margin: 0;">
+
+    <table class="table table-striped" style="margin: 0">
+      <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="example-viewport">
+        <thead >
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Dni</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list | busquedaHistorialAdmin:texto"  class="example-item">
+            <td>
+              <div class="d-flex align-items-center">
+                <img
+                    [src]= 'item.imagen'
+                    class="rounded-circle"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                    />
+                <div >
+                  <p class="fw-bold mb-1">{{item.nombre}}</p>
+                  <p class="fw-bold mb-0">{{item.email}}</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">{{item.apellido}}</p>
+            </td>
+            <td>
+              <p class="fw-normal mb-1">{{item.dni}}</p>
+            </td>
+            <td>
+              <button class="btn btn-primary" (click) = "pacienteseleccionado(item)">
+                Seleccionar Paciente
+              </button>
+
+            </td>
+            
+          </tr>
+  
+        </tbody>
+      </cdk-virtual-scroll-viewport>
+      </table>
+    </div>
+              
+    </div>
+    </div>
+
+
+    <!-- <p (click) = 'change()'  #imgElement>Scroll aqui</p> -->

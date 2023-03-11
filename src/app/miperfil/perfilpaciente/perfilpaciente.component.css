@@ -1,0 +1,37 @@
+.maximoh
+{
+    flex-basis: 50%;
+    max-height: 400px;
+    min-width: 0%;
+}
+img
+{
+    height: 100%;
+    width: 100%;
+}
+.f
+{
+    flex-basis: 60%;
+    margin: auto;
+    min-height: 350px;
+
+}
+h1
+{
+    text-align: center;
+}
+.d
+{
+    display: flex;
+}
+span
+{
+    font-size: 30px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+button
+{
+    width: 100%;
+}
