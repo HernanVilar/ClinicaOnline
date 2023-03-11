@@ -111,6 +111,7 @@ export class PerfilEspecialistaComponent implements OnInit {
       }
     })
     //asd
+    //asda
     // let data = (<HTMLInputElement>document.getElementById('agregar')).value;
     
     
