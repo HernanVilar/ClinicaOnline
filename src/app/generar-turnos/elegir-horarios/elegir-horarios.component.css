@@ -1,12 +1,12 @@
 .d
 {
-    min-height: 100vh;
     display: flex;
+    align-items: center;
 }
 .de
 {
+
     overflow-y: auto;
-    max-width: 600px;
     margin: auto;
     border: solid 2px black;
     
@@ -27,3 +27,7 @@ h1
 }
 
 
+/* table {
+    width: 100%;
+    color: white;
+  } */

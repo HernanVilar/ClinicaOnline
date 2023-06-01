@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SoloadminComponent } from './soloadmin/soloadmin.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { BusquedaHistorialAdminPipe } from '../pipes/busqueda-historial-admin.pipe';
-
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -27,7 +27,8 @@ import { BusquedaHistorialAdminPipe } from '../pipes/busqueda-historial-admin.pi
     GenerarTurnosRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    ScrollingModule
+    ScrollingModule,
+    MatTableModule
 
   ]
 })
