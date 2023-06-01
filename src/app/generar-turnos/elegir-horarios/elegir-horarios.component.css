@@ -2,8 +2,13 @@
 {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.de
+{
+    overflow-y: auto;
+    max-width: 600px;
+    margin: auto;
+    border: solid 2px black;
     
 }
 #bb
@@ -15,13 +20,10 @@
 {
    min-height: 50px;
 }
-#ep
+h1
 {
-    display: block;
-    margin-right: 50px;
+    text-align: center;
+    color: white;
 }
-.pp
-{
-    padding-right: 200px;
-}
+
 

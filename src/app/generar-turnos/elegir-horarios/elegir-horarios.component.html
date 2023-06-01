@@ -1,4 +1,7 @@
-<div class="d">
+<div>
+    <h1>TURNOS</h1>
+</div>
+<div class="de">
     <div>
         <div  class="spinner-border" role="status" *ngIf="cargando" >
           </div>
@@ -7,7 +10,6 @@
     <div *ngFor="let item of arraytercero">
             <button class="btn btn-danger"> {{item.dia}} </button>
         <div *ngFor="let ese of item.horario" class="efe">
-          
             <!-- <button id="bb" (click) = "quehago(item.dia,ese.hora,ese.minutos)" *ngIf="ese.estado == 'habilitado'"  class="btn btn-primary">{{ese.hora}}:{{ese.minutos}} </button> -->
             <button id="bb" (click) = "quehago(item.dia,ese.hora,ese.minutos)" *ngIf="ese.estado == 'habilitado'"  class="btn btn-primary">{{ese.hora}}:{{ese.minutos}} </button>
         </div>

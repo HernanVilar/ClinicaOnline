@@ -180,7 +180,7 @@ img
     display: flex;
     justify-content: center;
 }
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .let{
     display: flex;
     flex-direction: column;

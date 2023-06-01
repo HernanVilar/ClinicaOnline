@@ -7,22 +7,22 @@
             </div>
             <form [formGroup] = "formGroup" (ngSubmit) = "aceptar()">
                 <div class="row">
-                    <div class="col">
-                <div class="form-outline fet">
+                    <div class="col-md-4 mb-3">
+                    <div class="fet">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" formControlName= "nombre">
                     <small class="invalid" *ngIf = "formGroup.get('nombre')?.hasError('required') && formGroup.get('nombre')?.touched">El nombre es requerido</small>
                 </div>
             </div>
-            <div class="col">
-                <div class="form-outline  fet">
+            <div class="col-md-4 mb-3">
+                <div class="  fet">
                     <label for="Apellido"  class="form-label">Apellido</label>
                     <input type="text" class="form-control" placeholder="Apellido" id="Apellido" formControlName= "apellido">
                     <small class="invalid" *ngIf = "formGroup.get('apellido')?.hasError('required') && formGroup.get('apellido')?.touched">El apellido es requerido</small>
                 </div>
             </div>
-            <div class="col">
-                <div class="form-outline  fet">
+            <div class="col-md-4 mb-3">
+                <div class="fet">
                     <label for="edad"  class="form-label">Edad</label>
                     <input type="number" class="form-control" placeholder="edad" id="edad" formControlName= "edad">
                     <small class="invalid" *ngIf = "formGroup.get('edad')?.hasError('required') && formGroup.get('edad')?.touched">La edad es requerida</small>
@@ -32,7 +32,7 @@
             </div>
             <div class="row">
 
-                <div class="col">
+                <div class="col-md-4 mb-3">
 
                 <div class="form-outline  fet">
                     <label for="dni">DNI</label>
@@ -40,14 +40,14 @@
                     <small class="invalid" *ngIf = "formGroup.get('dni')?.hasError('required') && formGroup.get('dni')?.touched">El DNI es requerido</small>
                 </div> 
             </div>
-            <div class="col">
+            <div class="col-md-4 mb-3">
                 <div class="form-outline  fet"> 
                     <label for="obraSocial">ObraSocial</label>
                     <input type="text" class="form-control" placeholder="obraSocial" id="obraSocial" formControlName= "obraSocial">
                     <small class="invalid" *ngIf = "formGroup.get('obraSocial')?.hasError('required') && formGroup.get('obraSocial')?.touched">La obra social es requerida</small>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-4 mb-3">
                 <div class="form-outline  fet">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" placeholder="email" id="email" formControlName= "email">
@@ -68,6 +68,7 @@
                     <input  type="file" accept=".png, .jpg, .jpeg" multiple (change) = "cargarImagen($event)" formControlName="inputFile"  id="inputFile">
                     <label class="labelInputFile" for="inputFile">IMAGEN </label>
                     <div class="tete">
+                        das
                         <small class="invalid" *ngIf = "formGroup.get('inputFile')?.hasError('required') && formGroup.get('inputFile')?.touched">El archivo es requerido</small>   
                     </div>
                 </div>

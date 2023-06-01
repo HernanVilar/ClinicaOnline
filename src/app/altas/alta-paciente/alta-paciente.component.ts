@@ -138,19 +138,17 @@ export class AltaPacienteComponent implements OnInit {
 cargarImagen(event:any)
 {
   this.arra.push(event.target.files[0]);
+  
   if(this.eventoGeneral != null)
   {
     this.eventoGeneral.target.files.set = this.arra;
     console.log(this.eventoGeneral.target.files);
 
-    
-
-
-
   }
   else
   {
     this.eventoGeneral  = event;
+    console.log(this.eventoGeneral.target.files);
 
   }
 }
